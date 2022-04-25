@@ -18,12 +18,21 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
   <NavbarRoot>
     <Container clean className="mx-auto max-w-8xl px-6">
       <div className={s.nav}>
-        <div className="flex items-center flex-1">
+        <div className="flex items-center">
+          <h1 className="font-bold text-xl font-mono mx-2">BA</h1>
           <Link href="/">
             <a className={s.logo} aria-label="Logo">
               <Logo />
             </a>
           </Link>
+          <div>
+            <h1 className="font-bold text-xl font-mono mx-2">YC</h1>
+          </div>
+          <div>
+            <h1 className="text-sm text-grey-600 ml-10 mr-10">
+              ✈️ Free shipping on orders above $60
+            </h1>
+          </div>
           <nav className={s.navMenu}>
             <Link href="/search">
               <a className={s.link}>All</a>

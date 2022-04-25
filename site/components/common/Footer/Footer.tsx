@@ -32,11 +32,10 @@ const Footer: FC<Props> = ({ className, pages }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accent-2 py-12 text-primary bg-primary transition-colors duration-150">
           <div className="col-span-1 lg:col-span-2">
             <Link href="/">
-              <a className="flex flex-initial items-center font-bold md:mr-24">
-                <span className="rounded-full border border-accent-6 mr-2">
-                  <Logo />
-                </span>
-                <span>ACME</span>
+              <a className="flex flex-initial items-center font-bold">
+                <span className="mx-2">BA</span>
+                <Logo />
+                <span className="mx-2">YC</span>
               </a>
             </Link>
           </div>
@@ -68,10 +67,12 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>
+              &copy; 2022 Bayc Merch ABN 12030 03030 23020. All rights reserved.
+            </span>
           </div>
-          <div className="flex items-center text-primary text-sm">
-            <span className="text-primary">Created by</span>
+          {/* <div className="flex items-center text-primary text-sm">
+            <span className="text-primary">Powered by</span>
             <a
               rel="noopener noreferrer"
               href="https://vercel.com"
@@ -84,7 +85,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 alt="Vercel.com Logo"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </Container>
     </footer>
